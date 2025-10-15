@@ -1,0 +1,14 @@
+{
+    "ip": "192.168.1.1",
+    "success": true,
+    "type": "IPv4",
+    "continent": "Asia",
+    "continent_code": "AS",
+    "country": "India",
+    "country_code": "IN",
+    "region": "MH",
+    "region_code": "MH",
+    "city": "Mumbai",
+    "latitude": 19.076,
+    "longitude": 72.8777
+}
